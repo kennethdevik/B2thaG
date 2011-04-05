@@ -1,0 +1,36 @@
+    ,---,.               ,----,     ___      ,---,                          ,----..    
+  ,'  .'  \            .'   .' \  ,--.'|_  ,--.' |                         /   /   \   
+,---.' .' |          ,----,'    | |  | :,' |  |  :                        |   :     :  
+|   |  |: |          |    :  .  ; :  : ' : :  :  :                        .   |  ;. /  
+:   :  :  /          ;    |.'  /.;__,'  /  :  |  |,--.  ,--.--.           .   ; /--`   
+:   |    ;           `----'/  ; |  |   |   |  :  '   | /       \          ;   | ;  __  
+|   :     \            /  ;  /  :__,'| :   |  |   /' :.--.  .-. |         |   : |.' .' 
+|   |   . |           ;  /  /-,   '  : |__ '  :  | | | \__\/: . .         .   | '_.' : 
+'   :  '; |          /  /  /.`|   |  | '.'||  |  ' | : ," .--.; |         '   ; : \  | 
+|   |  | ;         ./__;      :   ;  :    ;|  :  :_:,'/  /  ,.  |         '   | '/  .' 
+|   :   /          |   :    .'    |  ,   / |  | ,'   ;  :   .'   \        |   :    /   
+|   | ,'           ;   | .'        ---`-'  `--''     |  ,     .-./         \   \ .'    
+`----'             `---'                              `--`---'              `---`      
+
+   -Script for å legge inn BEKK kontakter inn i Gmail (unyttig for ikke bekkere, move along)
+
+Features (forutsetter at kontaktene synkes til mobilen):
+ * Opplasting av kontaktinformasjon for alle ansatte med bilde til Gmail Contacts
+ * Sletting av mappen BEKK inkludert de ansatte.
+ * Alle kontaktene blir lagt inn i en egen BEKK-mappe
+ * Iphone features: 
+    * Viser navn og bilde av personen som ringer
+    * I kontaktlisten får du opp avdelings- og faggruppeinformasjon om den enkelte ansatte
+    * Adressen til den ansatte kan klikkes på for å få opp lokasjon i Google Maps
+
+Annen praktisk informasjon:
+ * Alle ansatte som blir lagt til får en BEKKID tag i notatfeltet, og slettingen av BEKK kontaktene skal bare slette kontakten med den taggen.
+ * Dersom man ønsker å få oppdatert sin BEKK kontaktliste i Gmail må man for øyeblikket slette alle og legge til alle på nytt igjen.
+ * Legge til kontaktinformasjon og laste opp bilde må gjøres i to operasjoner mot Gmail.
+ * Hastigheten på scriptet kan økes ved å legge inn all kontaktinformasjon i en batch operasjon. Bildene må etterpå lastes opp for hver enkelt kontakt.
+ * Noen ganger klager Gmail på at bilde lastes opp rett etter at kontaktinformasjonen er lagt inn(Gmail er ikke klar over at kontakten faktisk er lagt inn)
+ * 'add' starter alltid på første ansatt i alfabetet, og tar ikke hensyn til om de allerede er lagt inn i Gmail.
+ * Noe muffins med mailadressen til Torstein Gjengedal fører til feil ved opplasting av bilde. Endre litt på mailadressenhans og opplasting av bilde fungerer. Veldig rart.
+ * Bug i Gdata for Ruby 1.9 brukere: http://stackoverflow.com/questions/4120720/no-jcode-gem-when-running-rails-server
+
+Testet på Google apps kontoer, men det bør fungerer like fint på vanlige Gmail kontoer

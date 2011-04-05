@@ -1,0 +1,24 @@
+<atom:entry xmlns:atom='http://www.w3.org/2005/Atom' xmlns:gContact='http://schemas.google.com/contact/2008'
+    xmlns:gd='http://schemas.google.com/g/2005'>
+  <atom:category scheme='http://schemas.google.com/g/2005#kind'
+    term='http://schemas.google.com/contact/2008#contact' />
+  <gd:name>
+     <gd:givenName>%FirstName%</gd:givenName>
+     <gd:familyName>%LastName%</gd:familyName>
+     <gd:fullName>%FirstName% %LastName%</gd:fullName>
+  </gd:name>
+  <atom:title type='text'>%FirstName% %LastName%</atom:title>
+  <atom:content type='text'>BEKKID:%Id%</atom:content>
+  <gd:email rel='http://schemas.google.com/g/2005#work'
+    primary='true'
+    address='%Email%' displayName='%FirstName% %LastName%' />
+  <gd:phoneNumber rel='http://schemas.google.com/g/2005#work'
+    primary='true'>%MobilePhone%</gd:phoneNumber>
+  <gd:postalAddress rel='http://schemas.google.com/g/2005#home'
+    primary='true'>%StreetAddress%, %PostalNr% %PostalAddress%</gd:postalAddress>
+  <gd:organization rel='http://schemas.google.com/g/2005#work'>
+    <gd:orgTitle>%InterestGroup%</gd:orgTitle>
+    <gd:orgName>%Department%, BEKK</gd:orgName>
+  </gd:organization>
+  <gContact:groupMembershipInfo href="%groupurl%"/>
+</atom:entry>
