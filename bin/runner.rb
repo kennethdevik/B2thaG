@@ -7,13 +7,11 @@ action = gets.strip.downcase
 if(action == 'add')
   puts 'Enter BEKK username'
   busername = gets.strip
-  puts 'Enter BEKK password'
-  bpassword = gets.strip
+  bpassword = ask("Enter BEKK password: ") { |q| q.echo = false }
 end
 puts 'Enter Gmail username'
 gusername = gets.strip
-puts 'Enter Gmail password'
-gpassword = gets.strip
+gpassword = ask("Enter Gmail password: ") { |q| q.echo = false }
 
 b2tha_g = B2thag::Client.new(busername, bpassword, gusername, gpassword)
 

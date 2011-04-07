@@ -2,6 +2,8 @@ require 'rubygems'
 require 'employees'
 require 'gcontacts'
 require 'exceptions'
+require 'rubygems'
+require 'highline/import'
 
 module B2thag
   class Client
